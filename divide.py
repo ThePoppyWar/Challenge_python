@@ -14,5 +14,5 @@ def divide(a, b):
         return None
     return result
 
-
+print(divide(number1,number2))
 
