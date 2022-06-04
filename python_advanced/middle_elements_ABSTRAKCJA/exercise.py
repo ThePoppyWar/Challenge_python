@@ -57,3 +57,7 @@ print("========================================")
 print(nums[8])
 print("========================================")
 print(nums[2])
+
+mix_proba = [[6, 7, 8, 9, 10], ["Kto", "to", "taki?"], [], ["sześć", "siedem", "osiem", "dziewięć"], [8, "to", "osiem"], SequeneceOfNumbers(14, 46, 4)]
+proba = middle_elements(mix_proba)
+print(proba)
