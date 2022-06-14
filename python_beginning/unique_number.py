@@ -32,3 +32,4 @@ def count_unique_elements(list_A):
 
 list_number_1 = [1, 2, 3, 4, 3, 2, 3, 4, 5, 6, 7, 8, 10, 9]
 print(count_unique_elements(list_number_1))
+
