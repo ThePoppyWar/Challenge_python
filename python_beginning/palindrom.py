@@ -23,3 +23,20 @@ word_4 = "Marchewka"
 
 print(palindorm_2(word_3))
 print(palindorm_2(word_4))
+
+# or
+print("+++++++++++++++++++++++++++++++++++++")
+def palindrome_2(word):
+    first_index = 0
+    last_index = len(word) - 1
+    while first_index <= last_index:
+        if word[first_index] != word[last_index]:
+            return False
+        else:
+            first_index += 1
+            last_index -= 1
+    return True
+
+print(palindrome_2("radar"))
+print(palindrome_2("radsiar"))
+
