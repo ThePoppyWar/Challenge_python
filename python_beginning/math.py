@@ -16,6 +16,21 @@ def add_to_list(n, lista = []):
     lista.append(n)
     print(lista)
 
+
 add_to_list(1)
 add_to_list(2, [4, 5])
 add_to_list(3)
+
+
+def append_to(element, to=None):
+    if to is None:
+        to = []
+    to.append(element)
+    return to
+
+print(append_to(2, [3,5]))
+print(append_to(2))
+print(append_to(5))
+
+
+
