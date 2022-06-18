@@ -9,7 +9,7 @@ def fizzbuzz(n):
             result = str(i)
         print(result)
 
-print(fizzbuzz(30))
+fizzbuzz(30)
 
 # def fizzbuzz(n):
 #     for i in range(1, n+1):
