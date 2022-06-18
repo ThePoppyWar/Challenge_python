@@ -3,8 +3,11 @@ class Dog:
         self.name = name
         self.breed = breed
 
-    def __str__(self):
-        return f"Dog of breed {self.breed} has a name {self.name}"
+    # def __str__(self):
+    #     return f"Breed of dog {self.breed} has a name {self.name}"
+    def __repr__(self):
+        return f"Breed of dog {self.breed} has a name {self.name}"
+
 
 dos_1 = Dog("Czarus", "Haski")
 dos_2 = Dog("Oczek", "ratlerek")
