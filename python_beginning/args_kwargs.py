@@ -44,3 +44,19 @@ def hello(**kwargs):
 hello()
 hello(name="John")
 print("-----------------------------------------------------------")
+
+def sum_int(**kwargs):
+    if kwargs:
+        result = 0
+        for kwarg in kwargs.values():
+            if isinstance(kwarg, int):
+                result += kwarg
+        return result
+    return None
+
+sum_int()
+print(sum_int(name='John'))
+print(sum_int(name='John', game1=33, game2=333, retro=0.5))
+
+
+
