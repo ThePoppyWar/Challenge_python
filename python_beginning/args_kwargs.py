@@ -29,11 +29,14 @@ sample2(ver1="puthon", ver2="3.8")
 
 print("-----------------------------------------------------------")
 
+
 def func(**kwargs):
     for item in kwargs.items():
         print(item)
 
+
 func(name="jan", nazwisko="kowalski")
+
 
 def hello(**kwargs):
     if 'name' in kwargs:
@@ -41,9 +44,11 @@ def hello(**kwargs):
     else:
         print("Hello")
 
+
 hello()
 hello(name="John")
 print("-----------------------------------------------------------")
+
 
 def sum_int(**kwargs):
     if kwargs:
@@ -54,9 +59,26 @@ def sum_int(**kwargs):
         return result
     return None
 
+
 sum_int()
 print(sum_int(name='John'))
 print(sum_int(name='John', game1=33, game2=333, retro=0.5))
 
+print("-----------------------------------------------------------")
 
+
+def sample3(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+sample3()
+
+sample3(3, 4, 5, va1='ore', va3='more')
+
+books = {"horror": "Smentarz dla zwierząt", "fantastyka": "Zakon drzewa pomarańczy"}
+sample3(**books)
+number = (10, 40, 30)
+sample3(*number, **books)
+print("-----------------------------------------------------------")
 
