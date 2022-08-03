@@ -92,3 +92,11 @@ def stick(*args):
 print(stick('sport', 'summer'))
 print(stick(3, 5, 7))
 print(stick(False, 'time', True, 'workout', [], 'gym'))
+print("-----------------------------------------------------------")
+
+def info(main_tech, **techs):
+    print(f'Main technolog: {main_tech}')
+    if "sql" in techs:
+        print(f"SQL -> {techs['sql']}")
+
+info('python', sql='junior')
