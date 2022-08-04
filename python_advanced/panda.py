@@ -9,3 +9,7 @@ class Container:
 
 print(Container.__dict__.keys())
 
+container = Container()
+
+print(type(Container.__dict__))
+print(type(container.__dict__))
